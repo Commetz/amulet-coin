@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Estatística de Amulet Coin no PokeMMO</title>
+    <!-- Adicionando o Favicon -->
+    <link rel="icon" href="amulet_coin.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8e1c1c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #8e1c1c;
+            border-bottom: 2px solid #8e1c1c;
+            padding-bottom: 8px;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 15px 0;
+            text-align: justify;
+            font-size: 1em;
+            color: #555;
+        }
+        .formula, .result {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f3f3f3;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            color: #c0392b;
+        }
+        .result {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        a {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: white;
+            background-color: #8e1c1c;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #b03a2e;
+        }
+        footer {
+            background-color: #8e1c1c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Análise Estatística de Amulet Coin no PokeMMO</h1>
+    </header>
+
+    <div class="container">
+        <h2>Objetivo da Análise</h2>
+        <p>
+            O objetivo desta análise é avaliar a viabilidade econômica de farmar o item "Amulet Coin" no jogo PokeMMO. Este estudo abordará os cálculos necessários para determinar a probabilidade de encontrar esse item durante a execução de uma atividade específica no jogo.
+        </p>
+
+        <h2>Descrição da Localização e Probabilidades</h2>
+        <p>
+            A melhor localização para farmar o "Amulet Coin" é a área de Kindle Road, localizada na Ilha 1 em Kanto. Nessa área, os jogadores podem encontrar hordas de Pokémon, sendo os dois Pokémon que mais frequentemente aparecem a Ponyta, de raridade "Comum", e o Meowth, de raridade "Incomum". Após pesquisa em fontes confiáveis, determinamos que a chance de encontrar uma Ponyta é de 30%, enquanto a chance de encontrar um Meowth é de 10%.
+        </p>
+
+        <p class="formula">
+            Chance de Ponyta = 30%<br>
+            Chance de Meowth = 10%
+        </p>
+
+        <h2>Cálculo das Probabilidades</h2>
+        <p>
+            Para calcular a probabilidade de cada Pokémon aparecer em uma horda, é necessário realizar uma análise proporcional, levando em consideração que a soma das probabilidades de todos os Pokémon encontrados deve resultar em 100%. Ou seja, temos uma probabilidade total de 40% de encontrar qualquer um dos dois Pokémon, sendo 30% para Ponyta e 10% para Meowth.
+        </p>
+
+        <p>
+            A chance de encontrar uma horda de Ponyta, considerando a probabilidade total de 40%, é de:
+        </p>
+        <p class="formula">
+            (30% / 40%) * 100 = 75%
+        </p>
+
+        <p>
+            Já a chance de encontrar uma horda de Meowth é de:
+        </p>
+        <p class="formula">
+            (10% / 40%) * 100 = 25%
+        </p>
+
+        <h2>Probabilidade de Encontrar um Amulet Coin</h2>
+        <p>
+            Agora, é necessário calcular a probabilidade de que, entre os Meowths encontrados, pelo menos um esteja carregando um Amulet Coin. Sabemos que a chance de um Meowth estar carregando um item é de 5%, e ele pode estar carregando um Amulet Coin ou uma Quick Claw. Logo, a chance de um Meowth carregar um Amulet Coin é de:
+        </p>
+        <p class="formula">
+            5% / 2 = 2,5%
+        </p>
+
+        <p>
+            Considerando que as hordas contêm 5 Meowths, a probabilidade de não encontrar nenhum Amulet Coin em uma horda é dada por:
+        </p>
+        <p class="formula">
+            Chance de não encontrar = 1 - 0,025 = 0,975
+        </p>
+
+        <p>
+            A chance de não encontrar um Amulet Coin em uma horda de 5 Meowths é:
+        </p>
+        <p class="formula">
+            (0,975) ^ 5 = 0,8810
+        </p>
+
+        <p>
+            Portanto, a chance de encontrar pelo menos um Amulet Coin em uma horda é de:
+        </p>
+        <p class="result">
+            1 - 0,8810 = 0,1190 ou 11,90%
+        </p>
+
+        <h2>Média de Hordas Necessárias</h2>
+        <p>
+            Para determinar quantas hordas são necessárias em média para encontrar um Amulet Coin, podemos utilizar a fórmula da média aritmética:
+        </p>
+        <p class="formula">
+            Média = 1 / P
+        </p>
+
+        <p>
+            Onde P é a probabilidade de encontrar um Amulet Coin em uma horda, ou seja, 0,1190. Assim, temos:
+        </p>
+        <p class="formula">
+            Média = 1 / 0,1190 = 8,4
+        </p>
+
+        <p>
+            Em média, são necessárias aproximadamente 9 hordas de Meowth para encontrar um Amulet Coin.
+        </p>
+
+        <h2>Conclusão</h2>
+        <p>
+            Após os cálculos apresentados, é possível concluir que, para obter um Amulet Coin de forma eficiente, o jogador precisa de, em média, 9 hordas de Meowth. Com o preço de venda do Amulet Coin variando entre 20k e 25k, o lucro por hora pode variar entre 140k/h e 175k/h, o que torna esse método uma forma viável de gerar lucro no jogo.
+        </p>
+    </div>
+
+</body>
+</html>
